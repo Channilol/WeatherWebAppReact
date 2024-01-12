@@ -8,7 +8,7 @@ Minimal Weather web app created with react 18.2.0 by me
 
 ## What I Installed
 Just react-router-dom to navigate through multiple pages \
-NO CSS Framework was used on this. It's made on pure CSS
+NO CSS Framework was used on this. It's design is made on pure CSS
 
 ## Overall thoughts and experience
 I made this app as a project for the Fullstack-Developer BootCamp i'm doing at the moment, and it was a pretty fun challenge taking in consideration I started studying react 2 weeks ago.\
