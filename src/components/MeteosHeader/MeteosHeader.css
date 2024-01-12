@@ -1,0 +1,15 @@
+header {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(0, 101, 202);
+    font-size: 4em;
+    color: whitesmoke;
+    font-weight: 400;
+    letter-spacing: 10px;
+}

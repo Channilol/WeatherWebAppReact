@@ -1,0 +1,56 @@
+.navMenu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: navMenuAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes navMenuAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.navMenu button {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navMenu button svg {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.navMenu button:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.navMenu button:hover svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width:780px) {
+   .navMenu {
+    display: block;
+    top: 0;
+    left: 0;
+    } 
+    .navMenu button {
+        width: 50px;
+        height: 50px;
+    }
+}

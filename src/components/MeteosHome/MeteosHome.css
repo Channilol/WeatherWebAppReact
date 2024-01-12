@@ -1,0 +1,167 @@
+.homepage {
+    min-height: calc(100vh - 150px);
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.homepage div {
+    cursor: pointer;
+    position: relative;
+    background-color:rgb(27, 27, 27);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.homepage div:hover {
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.05);
+    transform: scale(1.1);
+}
+
+.homeLeft img:first-of-type {
+    width: 40%;
+    justify-self: flex-start;
+    transition: width 0.2s ease-in-out;
+}
+
+.homeLeft {
+    justify-content: center;
+    animation: homeLeftAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes homeLeftAnimation {
+    from {
+        opacity: 0;
+        left: -50px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }  
+}
+
+.homeLeft p {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 20px 0;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.afterHover1 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-in-out, left 0.5s ease-in-out;
+}
+
+.homeLeft:hover .afterHover1 {
+    left: 20px;
+    opacity: 1;
+}
+
+.afterHover2 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.homeRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: homeRightAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes homeRightAnimation {
+    from {
+        opacity: 0;
+        right: -50px;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }  
+}
+
+.homeRight:hover .afterHover2 {
+    right: 20px;
+    opacity: 1;
+}
+
+.homeRight h2 {
+    text-align: center;
+    font-size: 2.2em;
+    transition: font-size 0.2s ease-in-out;
+    color: white;
+}
+
+.homeRight:hover h2 {
+    font-size: 2.7em;
+}
+
+@media screen and (min-width:780px) {
+    .homepage {
+        min-height: calc(100vh - 150px);
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .homepage div {
+        width: 400px;
+        height: 400px;
+        transform: scale(0.8);
+    }
+
+    .homepage div:hover {
+        box-shadow: inset 0px 0px 20px rgba(0,0,0,0.05);
+        transform: scale(0.9);
+    }
+
+    .homepage .homeLeft:hover img:first-of-type {
+        width: 55%;
+    }
+    
+    .homeLeft:hover p {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .homepage div {
+        width: 400px;
+        height: 400px;
+        transform: scale(1);
+    }
+
+    .homepage div:hover {
+        box-shadow: inset 0px 0px 20px rgba(0,0,0,0.05);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .homepage div {
+        width: 500px;
+        height: 500px;
+        transform: scale(1);
+    }
+}
