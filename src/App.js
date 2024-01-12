@@ -6,8 +6,6 @@ import SearchPage from './components/SearchPage/SearchPage';
 import InteractiveMap from './components/InteractiveMap/InteractiveMap';
 import AboutMe from './components/AboutMe/AboutMe';
 
-//https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/perugia?key=SWNT4HPTWM4PFXA4PEBV7H7JP
-
 function App() {
   return (
     <BrowserRouter>
